@@ -5,6 +5,8 @@ namespace GizBook
         public Form1()
         {
             InitializeComponent();
+
+            txtpassword.UseSystemPasswordChar = true;
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -44,6 +46,23 @@ namespace GizBook
             else
             {
                 MessageBox.Show("Username not found.");
+            }
+        }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            if (txtpassword.UseSystemPasswordChar)
+            {
+                txtpassword.UseSystemPasswordChar = false; 
+            }
+            else
+            {
+                txtpassword.UseSystemPasswordChar = true; 
             }
         }
     }

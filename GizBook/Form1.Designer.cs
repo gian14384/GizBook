@@ -73,6 +73,7 @@
             // 
             // txtusername
             // 
+            txtusername.BorderStyle = BorderStyle.None;
             txtusername.Location = new Point(442, 373);
             txtusername.Multiline = true;
             txtusername.Name = "txtusername";
@@ -81,11 +82,14 @@
             // 
             // txtpassword
             // 
+            txtpassword.BorderStyle = BorderStyle.None;
             txtpassword.Location = new Point(442, 492);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
+            txtpassword.PasswordChar = '*';
             txtpassword.Size = new Size(528, 56);
             txtpassword.TabIndex = 4;
+            txtpassword.TextChanged += txtpassword_TextChanged;
             // 
             // panel4
             // 
@@ -96,6 +100,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(51, 56);
             panel4.TabIndex = 5;
+            panel4.Click += panel4_Click;
             // 
             // panel5
             // 

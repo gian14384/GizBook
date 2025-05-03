@@ -38,18 +38,38 @@ namespace GizBook
         {
             string username = txtusername.Text;
             string password = txtpassword.Text;
+            string confirmpass = txtconfirm.Text;
+            string name = txtname.Text;
 
-            if (UserStore.Users.ContainsKey(username))
+            if (username == "" || password == "" || confirmpass == "" || name == "")
             {
-                MessageBox.Show("Username already exist.");
+                MessageBox.Show("Input all the info needed");
+                txtusername.Text = "";
+                txtpassword.Text = "";
+                txtconfirm.Text = "";
+                txtname.Text = "";
             }
             else
             {
-                UserStore.Users.Add(username, password);
-                MessageBox.Show("Registered succesfully");
-                Form1 f1 = new Form1();
-                f1.Show();
-                this.Hide();
+                if (password == confirmpass)
+                {
+                    if (UserStore.Users.ContainsKey(username))
+                    {
+                        MessageBox.Show("Username already exist.");
+                    }
+                    else
+                    {
+                        UserStore.Users.Add(username, password);
+                        MessageBox.Show("Registered succesfully");
+                        Form1 f1 = new Form1();
+                        f1.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Password did not match");
+                }
             }
         }
     }

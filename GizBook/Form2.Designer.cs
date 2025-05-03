@@ -63,6 +63,7 @@
             // 
             // txtname
             // 
+            txtname.BorderStyle = BorderStyle.None;
             txtname.Location = new Point(463, 261);
             txtname.Multiline = true;
             txtname.Name = "txtname";
@@ -81,6 +82,7 @@
             // 
             // txtusername
             // 
+            txtusername.BorderStyle = BorderStyle.None;
             txtusername.Location = new Point(463, 356);
             txtusername.Multiline = true;
             txtusername.Name = "txtusername";
@@ -99,6 +101,7 @@
             // 
             // txtpassword
             // 
+            txtpassword.BorderStyle = BorderStyle.None;
             txtpassword.Location = new Point(463, 456);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
@@ -117,6 +120,7 @@
             // 
             // txtconfirm
             // 
+            txtconfirm.BorderStyle = BorderStyle.None;
             txtconfirm.Location = new Point(463, 560);
             txtconfirm.Multiline = true;
             txtconfirm.Name = "txtconfirm";
