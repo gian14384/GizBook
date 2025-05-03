@@ -51,19 +51,24 @@ namespace GizBook
 
         private void txtpassword_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel4_Click(object sender, EventArgs e)
         {
             if (txtpassword.UseSystemPasswordChar)
             {
-                txtpassword.UseSystemPasswordChar = false; 
+                txtpassword.UseSystemPasswordChar = false;
             }
             else
             {
-                txtpassword.UseSystemPasswordChar = true; 
+                txtpassword.UseSystemPasswordChar = true;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
