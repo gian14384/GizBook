@@ -69,6 +69,10 @@ namespace GizBook
                 else
                 {
                     MessageBox.Show("Password did not match");
+                    txtusername.Text = "";
+                    txtpassword.Text = "";
+                    txtconfirm.Text = "";
+                    txtname.Text = "";
                 }
             }
         }
