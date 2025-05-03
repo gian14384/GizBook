@@ -9,6 +9,17 @@ namespace GizBook
             txtpassword.UseSystemPasswordChar = true;
         }
 
+        protected override CreateParams CreateParams
+
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle |= 0x02000000;
+                return handleparam;
+            }
+        }
+
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
