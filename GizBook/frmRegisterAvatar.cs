@@ -10,12 +10,14 @@ using System.Windows.Forms;
 
 namespace GizBook
 {
-    public partial class Form3 : Form
+    public partial class frmRegisterAvatar : Form
     {
-        public Form3()
+        public frmRegisterAvatar()
         {
             InitializeComponent();
         }
+
+       
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {

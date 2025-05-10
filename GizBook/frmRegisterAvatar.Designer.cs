@@ -1,6 +1,6 @@
 ﻿namespace GizBook
 {
-    partial class Form3
+    partial class frmRegisterAvatar
     {
         /// <summary>
         /// Required designer variable.

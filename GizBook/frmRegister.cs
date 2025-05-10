@@ -7,26 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace GizBook
 {
-    public partial class Form2 : Form
+    public partial class frmRegister : Form
     {
-        public Form2()
+        public frmRegister()
         {
             InitializeComponent();
-
         }
 
-        protected override CreateParams CreateParams
 
+
+        private void frmRegister_Load(object sender, EventArgs e)
         {
-            get
-            {
-                CreateParams handleparam = base.CreateParams;
-                handleparam.ExStyle |= 0x02000000;
-                return handleparam;
-            }
+
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
@@ -35,18 +31,6 @@ namespace GizBook
         }
 
         private void panel7_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Hide();
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Click(object sender, EventArgs e)
         {
             string username = txtusername.Text;
             string password = txtpassword.Text;
@@ -73,7 +57,7 @@ namespace GizBook
                     {
                         UserStore.Users.Add(username, password);
                         MessageBox.Show("Registered succesfully");
-                        Form1 f1 = new Form1();
+                        frmLogin f1 = new frmLogin();
                         f1.Show();
                         this.Hide();
                     }
@@ -87,6 +71,18 @@ namespace GizBook
                     txtname.Text = "";
                 }
             }
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void panel8_Click(object sender, EventArgs e)
+        {
+            frmLogin f1 = new frmLogin();
+            f1.Show();
+            this.Hide();
         }
     }
 }
