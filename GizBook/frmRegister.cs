@@ -61,8 +61,8 @@ namespace GizBook
                         UserStore.UserNames.Add(username, fullName);
 
                         MessageBox.Show("Registration successful!");
-                        frmLogin loginForm = new frmLogin();
-                        loginForm.Show();
+                        frmRegisterAvatar f3 = new frmRegisterAvatar();
+                        f3.Show();
                         this.Hide();
                     }
                 }

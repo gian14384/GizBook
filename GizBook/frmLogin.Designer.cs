@@ -215,7 +215,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            BackgroundImage = Properties.Resources.background;
+            BackgroundImage = Properties.Resources.background3;
             ClientSize = new Size(1440, 1024);
             Controls.Add(panel10);
             Controls.Add(panel9);

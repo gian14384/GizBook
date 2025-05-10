@@ -121,8 +121,8 @@
   <data name="Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Frame 427318962 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Frame 427318962 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="decks nav1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decks nav1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +172,8 @@
   <data name="Frame 427318969" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Frame 427318969.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 53" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="leaderboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\title (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +208,11 @@
   <data name="Already have an account_ Sign in instead." type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Already have an account_ Sign in instead..png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Password1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Frame 427318962 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Frame 427318962 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Add Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Add Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,6 +229,9 @@
   <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Password1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Frame 427318962 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Frame 427318962 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,7 +241,7 @@
   <data name="Frame 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Frame 22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="decks nav1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\decks nav1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="background3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

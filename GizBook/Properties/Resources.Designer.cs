@@ -123,6 +123,16 @@ namespace GizBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background3 {
+            get {
+                object obj = ResourceManager.GetObject("background3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bg {
             get {
                 object obj = ResourceManager.GetObject("bg", resourceCulture);
@@ -346,6 +356,16 @@ namespace GizBook.Properties {
         internal static System.Drawing.Bitmap Group_53 {
             get {
                 object obj = ResourceManager.GetObject("Group 53", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap leaderboard {
+            get {
+                object obj = ResourceManager.GetObject("leaderboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

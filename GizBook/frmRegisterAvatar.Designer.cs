@@ -33,19 +33,19 @@
             panel3 = new Panel();
             panel5 = new Panel();
             panel8 = new Panel();
-            panel4 = new Panel();
-            panel6 = new Panel();
+            avatar1 = new Panel();
+            avatar2 = new Panel();
             panel1 = new Panel();
-            panel17 = new Panel();
-            panel16 = new Panel();
-            panel15 = new Panel();
-            panel14 = new Panel();
-            panel13 = new Panel();
-            panel12 = new Panel();
-            panel11 = new Panel();
-            panel10 = new Panel();
-            panel9 = new Panel();
-            panel7 = new Panel();
+            avatar3 = new Panel();
+            avatar11 = new Panel();
+            avatar6 = new Panel();
+            avatar9 = new Panel();
+            avatar8 = new Panel();
+            avatar7 = new Panel();
+            avatar10 = new Panel();
+            avatar5 = new Panel();
+            avatar12 = new Panel();
+            avatar4 = new Panel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -88,44 +88,47 @@
             panel8.Name = "panel8";
             panel8.Size = new Size(281, 68);
             panel8.TabIndex = 4;
+            panel8.Click += panel8_Click;
+            panel8.Paint += panel8_Paint;
             // 
-            // panel4
+            // avatar1
             // 
-            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
-            panel4.BackgroundImageLayout = ImageLayout.Center;
-            panel4.Cursor = Cursors.Hand;
-            panel4.Location = new Point(277, 137);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(102, 108);
-            panel4.TabIndex = 5;
+            avatar1.BackgroundImage = (Image)resources.GetObject("avatar1.BackgroundImage");
+            avatar1.BackgroundImageLayout = ImageLayout.Center;
+            avatar1.Cursor = Cursors.Hand;
+            avatar1.Location = new Point(277, 137);
+            avatar1.Name = "avatar1";
+            avatar1.Size = new Size(102, 108);
+            avatar1.TabIndex = 5;
+            avatar1.Click += avatar1_Click;
             // 
-            // panel6
+            // avatar2
             // 
-            panel6.BackgroundImage = (Image)resources.GetObject("panel6.BackgroundImage");
-            panel6.BackgroundImageLayout = ImageLayout.Center;
-            panel6.Cursor = Cursors.Hand;
-            panel6.Location = new Point(411, 137);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(102, 108);
-            panel6.TabIndex = 6;
+            avatar2.BackgroundImage = (Image)resources.GetObject("avatar2.BackgroundImage");
+            avatar2.BackgroundImageLayout = ImageLayout.Center;
+            avatar2.Cursor = Cursors.Hand;
+            avatar2.Location = new Point(411, 137);
+            avatar2.Name = "avatar2";
+            avatar2.Size = new Size(102, 108);
+            avatar2.TabIndex = 6;
             // 
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImage = Properties.Resources.Frame_427318940;
             panel1.BackgroundImageLayout = ImageLayout.Center;
-            panel1.Controls.Add(panel17);
-            panel1.Controls.Add(panel16);
-            panel1.Controls.Add(panel15);
-            panel1.Controls.Add(panel14);
-            panel1.Controls.Add(panel13);
-            panel1.Controls.Add(panel12);
-            panel1.Controls.Add(panel11);
-            panel1.Controls.Add(panel10);
-            panel1.Controls.Add(panel9);
-            panel1.Controls.Add(panel7);
-            panel1.Controls.Add(panel6);
-            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(avatar3);
+            panel1.Controls.Add(avatar11);
+            panel1.Controls.Add(avatar6);
+            panel1.Controls.Add(avatar9);
+            panel1.Controls.Add(avatar8);
+            panel1.Controls.Add(avatar7);
+            panel1.Controls.Add(avatar10);
+            panel1.Controls.Add(avatar5);
+            panel1.Controls.Add(avatar12);
+            panel1.Controls.Add(avatar4);
+            panel1.Controls.Add(avatar2);
+            panel1.Controls.Add(avatar1);
             panel1.Controls.Add(panel8);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel3);
@@ -135,105 +138,105 @@
             panel1.Size = new Size(1062, 701);
             panel1.TabIndex = 0;
             // 
-            // panel17
+            // avatar3
             // 
-            panel17.BackgroundImage = (Image)resources.GetObject("panel17.BackgroundImage");
-            panel17.BackgroundImageLayout = ImageLayout.Center;
-            panel17.Cursor = Cursors.Hand;
-            panel17.Location = new Point(543, 137);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(102, 108);
-            panel17.TabIndex = 11;
+            avatar3.BackgroundImage = (Image)resources.GetObject("avatar3.BackgroundImage");
+            avatar3.BackgroundImageLayout = ImageLayout.Center;
+            avatar3.Cursor = Cursors.Hand;
+            avatar3.Location = new Point(543, 137);
+            avatar3.Name = "avatar3";
+            avatar3.Size = new Size(102, 108);
+            avatar3.TabIndex = 11;
             // 
-            // panel16
+            // avatar11
             // 
-            panel16.BackgroundImage = (Image)resources.GetObject("panel16.BackgroundImage");
-            panel16.BackgroundImageLayout = ImageLayout.Center;
-            panel16.Cursor = Cursors.Hand;
-            panel16.Location = new Point(543, 398);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(102, 108);
-            panel16.TabIndex = 11;
+            avatar11.BackgroundImage = (Image)resources.GetObject("avatar11.BackgroundImage");
+            avatar11.BackgroundImageLayout = ImageLayout.Center;
+            avatar11.Cursor = Cursors.Hand;
+            avatar11.Location = new Point(543, 398);
+            avatar11.Name = "avatar11";
+            avatar11.Size = new Size(102, 108);
+            avatar11.TabIndex = 11;
             // 
-            // panel15
+            // avatar6
             // 
-            panel15.BackgroundImage = (Image)resources.GetObject("panel15.BackgroundImage");
-            panel15.BackgroundImageLayout = ImageLayout.Center;
-            panel15.Cursor = Cursors.Hand;
-            panel15.Location = new Point(411, 269);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(102, 108);
-            panel15.TabIndex = 13;
+            avatar6.BackgroundImage = (Image)resources.GetObject("avatar6.BackgroundImage");
+            avatar6.BackgroundImageLayout = ImageLayout.Center;
+            avatar6.Cursor = Cursors.Hand;
+            avatar6.Location = new Point(411, 269);
+            avatar6.Name = "avatar6";
+            avatar6.Size = new Size(102, 108);
+            avatar6.TabIndex = 13;
             // 
-            // panel14
+            // avatar9
             // 
-            panel14.BackgroundImage = (Image)resources.GetObject("panel14.BackgroundImage");
-            panel14.BackgroundImageLayout = ImageLayout.Center;
-            panel14.Cursor = Cursors.Hand;
-            panel14.Location = new Point(277, 398);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(102, 108);
-            panel14.TabIndex = 10;
+            avatar9.BackgroundImage = (Image)resources.GetObject("avatar9.BackgroundImage");
+            avatar9.BackgroundImageLayout = ImageLayout.Center;
+            avatar9.Cursor = Cursors.Hand;
+            avatar9.Location = new Point(277, 398);
+            avatar9.Name = "avatar9";
+            avatar9.Size = new Size(102, 108);
+            avatar9.TabIndex = 10;
             // 
-            // panel13
+            // avatar8
             // 
-            panel13.BackgroundImage = (Image)resources.GetObject("panel13.BackgroundImage");
-            panel13.BackgroundImageLayout = ImageLayout.Center;
-            panel13.Cursor = Cursors.Hand;
-            panel13.Location = new Point(681, 269);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(102, 108);
-            panel13.TabIndex = 12;
+            avatar8.BackgroundImage = (Image)resources.GetObject("avatar8.BackgroundImage");
+            avatar8.BackgroundImageLayout = ImageLayout.Center;
+            avatar8.Cursor = Cursors.Hand;
+            avatar8.Location = new Point(681, 269);
+            avatar8.Name = "avatar8";
+            avatar8.Size = new Size(102, 108);
+            avatar8.TabIndex = 12;
             // 
-            // panel12
+            // avatar7
             // 
-            panel12.BackgroundImage = (Image)resources.GetObject("panel12.BackgroundImage");
-            panel12.BackgroundImageLayout = ImageLayout.Center;
-            panel12.Cursor = Cursors.Hand;
-            panel12.Location = new Point(543, 269);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(102, 108);
-            panel12.TabIndex = 11;
+            avatar7.BackgroundImage = (Image)resources.GetObject("avatar7.BackgroundImage");
+            avatar7.BackgroundImageLayout = ImageLayout.Center;
+            avatar7.Cursor = Cursors.Hand;
+            avatar7.Location = new Point(543, 269);
+            avatar7.Name = "avatar7";
+            avatar7.Size = new Size(102, 108);
+            avatar7.TabIndex = 11;
             // 
-            // panel11
+            // avatar10
             // 
-            panel11.BackgroundImage = (Image)resources.GetObject("panel11.BackgroundImage");
-            panel11.BackgroundImageLayout = ImageLayout.Center;
-            panel11.Cursor = Cursors.Hand;
-            panel11.Location = new Point(411, 398);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(102, 108);
-            panel11.TabIndex = 10;
+            avatar10.BackgroundImage = (Image)resources.GetObject("avatar10.BackgroundImage");
+            avatar10.BackgroundImageLayout = ImageLayout.Center;
+            avatar10.Cursor = Cursors.Hand;
+            avatar10.Location = new Point(411, 398);
+            avatar10.Name = "avatar10";
+            avatar10.Size = new Size(102, 108);
+            avatar10.TabIndex = 10;
             // 
-            // panel10
+            // avatar5
             // 
-            panel10.BackgroundImage = (Image)resources.GetObject("panel10.BackgroundImage");
-            panel10.BackgroundImageLayout = ImageLayout.Center;
-            panel10.Cursor = Cursors.Hand;
-            panel10.Location = new Point(277, 269);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(102, 108);
-            panel10.TabIndex = 9;
+            avatar5.BackgroundImage = (Image)resources.GetObject("avatar5.BackgroundImage");
+            avatar5.BackgroundImageLayout = ImageLayout.Center;
+            avatar5.Cursor = Cursors.Hand;
+            avatar5.Location = new Point(277, 269);
+            avatar5.Name = "avatar5";
+            avatar5.Size = new Size(102, 108);
+            avatar5.TabIndex = 9;
             // 
-            // panel9
+            // avatar12
             // 
-            panel9.BackgroundImage = (Image)resources.GetObject("panel9.BackgroundImage");
-            panel9.BackgroundImageLayout = ImageLayout.Center;
-            panel9.Cursor = Cursors.Hand;
-            panel9.Location = new Point(681, 398);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(102, 108);
-            panel9.TabIndex = 8;
+            avatar12.BackgroundImage = (Image)resources.GetObject("avatar12.BackgroundImage");
+            avatar12.BackgroundImageLayout = ImageLayout.Center;
+            avatar12.Cursor = Cursors.Hand;
+            avatar12.Location = new Point(681, 398);
+            avatar12.Name = "avatar12";
+            avatar12.Size = new Size(102, 108);
+            avatar12.TabIndex = 8;
             // 
-            // panel7
+            // avatar4
             // 
-            panel7.BackgroundImage = (Image)resources.GetObject("panel7.BackgroundImage");
-            panel7.BackgroundImageLayout = ImageLayout.Center;
-            panel7.Cursor = Cursors.Hand;
-            panel7.Location = new Point(681, 137);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(102, 108);
-            panel7.TabIndex = 7;
+            avatar4.BackgroundImage = (Image)resources.GetObject("avatar4.BackgroundImage");
+            avatar4.BackgroundImageLayout = ImageLayout.Center;
+            avatar4.Cursor = Cursors.Hand;
+            avatar4.Location = new Point(681, 137);
+            avatar4.Name = "avatar4";
+            avatar4.Size = new Size(102, 108);
+            avatar4.TabIndex = 7;
             // 
             // frmRegisterAvatar
             // 
@@ -256,18 +259,18 @@
         private Panel panel3;
         private Panel panel5;
         private Panel panel8;
-        private Panel panel4;
-        private Panel panel6;
+        private Panel avatar1;
+        private Panel avatar2;
         private Panel panel1;
-        private Panel panel11;
-        private Panel panel10;
-        private Panel panel9;
-        private Panel panel7;
-        private Panel panel14;
-        private Panel panel13;
-        private Panel panel12;
-        private Panel panel17;
-        private Panel panel16;
-        private Panel panel15;
+        private Panel avatar10;
+        private Panel avatar5;
+        private Panel avatar12;
+        private Panel avatar4;
+        private Panel avatar9;
+        private Panel avatar8;
+        private Panel avatar7;
+        private Panel avatar3;
+        private Panel avatar11;
+        private Panel avatar6;
     }
 }

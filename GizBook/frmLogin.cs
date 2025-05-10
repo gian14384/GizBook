@@ -77,11 +77,13 @@ namespace GizBook
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            txtpassword.UseSystemPasswordChar = !passwordShown;
+            panel12.BackgroundImage = Image.FromFile("D:\\Final Project\\Images\\login\\btn_pw.png"); // Default image
+            panel12.BackgroundImageLayout = ImageLayout.Center;
         }
 
         private bool showingFirstImage = true;
-        private bool passwordShown = false;
+        private bool passwordShown = true;
 
         private void panel12_Click(object sender, EventArgs e)
         {
