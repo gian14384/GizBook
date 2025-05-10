@@ -2,6 +2,7 @@
 
 public static class UserStore
 {
-    // In-memory user storage
-    public static Dictionary<string, string> Users = new Dictionary<string, string>();
+    // Stores user credentials separately
+    public static Dictionary<string, string> UserPasswords = new Dictionary<string, string>(); // Username -> Password
+    public static Dictionary<string, string> UserNames = new Dictionary<string, string>();     // Username -> Full Name
 }

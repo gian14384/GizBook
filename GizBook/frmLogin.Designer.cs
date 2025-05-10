@@ -87,6 +87,7 @@
             panel7.BackColor = Color.Transparent;
             panel7.BackgroundImage = Properties.Resources.title;
             panel7.BackgroundImageLayout = ImageLayout.Center;
+            panel7.Cursor = Cursors.Hand;
             panel7.Location = new Point(375, 935);
             panel7.Name = "panel7";
             panel7.Size = new Size(151, 42);
@@ -97,6 +98,7 @@
             panel8.BackColor = Color.Transparent;
             panel8.BackgroundImage = Properties.Resources.title__1_;
             panel8.BackgroundImageLayout = ImageLayout.Center;
+            panel8.Cursor = Cursors.Hand;
             panel8.Location = new Point(671, 935);
             panel8.Name = "panel8";
             panel8.Size = new Size(162, 42);
@@ -107,6 +109,7 @@
             panel9.BackColor = Color.Transparent;
             panel9.BackgroundImage = Properties.Resources.title__2_;
             panel9.BackgroundImageLayout = ImageLayout.Center;
+            panel9.Cursor = Cursors.Hand;
             panel9.Location = new Point(965, 935);
             panel9.Name = "panel9";
             panel9.Size = new Size(145, 42);

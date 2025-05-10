@@ -32,50 +32,52 @@ namespace GizBook
 
         private void panel7_Click(object sender, EventArgs e)
         {
-            string username = txtusername.Text;
+            string username = txtusername.Text;   // Used for login
             string password = txtpassword.Text;
-            string confirmpass = txtconfirm.Text;
-            string name = txtname.Text;
+            string confirmPass = txtconfirm.Text;
+            string fullName = txtname.Text;   // Actual full name of the user
 
-            if (username == "" || password == "" || confirmpass == "" || name == "")
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) ||
+                string.IsNullOrWhiteSpace(confirmPass) || string.IsNullOrWhiteSpace(fullName))
             {
-                MessageBox.Show("Input all the info needed");
-                txtusername.Text = "";
-                txtpassword.Text = "";
-                txtconfirm.Text = "";
-                txtname.Text = "";
+                MessageBox.Show("Please fill in all required fields.");
+                txtusername.Clear();
+                txtpassword.Clear();
+                txtconfirm.Clear();
+                txtname.Clear();
             }
             else
             {
-                if (password == confirmpass)
+                if (password == confirmPass)
                 {
-                    if (UserStore.Users.ContainsKey(username))
+                    if (UserStore.UserPasswords.ContainsKey(username))
                     {
-                        MessageBox.Show("Username already exist.");
+                        MessageBox.Show("Username already exists.");
                     }
                     else
                     {
-                        UserStore.Users.Add(username, password);
-                        MessageBox.Show("Registered succesfully");
-                        frmLogin f1 = new frmLogin();
-                        f1.Show();
+                        // Store username-password and username-full name separately
+                        UserStore.UserPasswords.Add(username, password);
+                        UserStore.UserNames.Add(username, fullName);
+
+                        MessageBox.Show("Registration successful!");
+                        frmLogin loginForm = new frmLogin();
+                        loginForm.Show();
                         this.Hide();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Password did not match");
-                    txtusername.Text = "";
-                    txtpassword.Text = "";
-                    txtconfirm.Text = "";
-                    txtname.Text = "";
+                    MessageBox.Show("Passwords do not match.");
+                    txtpassword.Clear();
+                    txtconfirm.Clear();
                 }
             }
         }
 
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void panel8_Click(object sender, EventArgs e)
@@ -83,6 +85,11 @@ namespace GizBook
             frmLogin f1 = new frmLogin();
             f1.Show();
             this.Hide();
+        }
+
+        private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

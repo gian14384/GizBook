@@ -35,8 +35,8 @@
             panel10 = new Panel();
             panel9 = new Panel();
             txtconfirm = new TextBox();
-            txtusername = new TextBox();
             txtpassword = new TextBox();
+            txtusername = new TextBox();
             txtname = new TextBox();
             panel8 = new Panel();
             panel7 = new Panel();
@@ -56,8 +56,8 @@
             panel1.Controls.Add(panel10);
             panel1.Controls.Add(panel9);
             panel1.Controls.Add(txtconfirm);
-            panel1.Controls.Add(txtusername);
             panel1.Controls.Add(txtpassword);
+            panel1.Controls.Add(txtusername);
             panel1.Controls.Add(txtname);
             panel1.Controls.Add(panel8);
             panel1.Controls.Add(panel7);
@@ -117,29 +117,30 @@
             txtconfirm.Size = new Size(532, 48);
             txtconfirm.TabIndex = 10;
             // 
-            // txtusername
-            // 
-            txtusername.BorderStyle = BorderStyle.None;
-            txtusername.Cursor = Cursors.IBeam;
-            txtusername.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtusername.Location = new Point(204, 245);
-            txtusername.Multiline = true;
-            txtusername.Name = "txtusername";
-            txtusername.PlaceholderText = "Username";
-            txtusername.Size = new Size(532, 48);
-            txtusername.TabIndex = 8;
-            // 
             // txtpassword
             // 
             txtpassword.BorderStyle = BorderStyle.None;
             txtpassword.Cursor = Cursors.IBeam;
             txtpassword.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtpassword.Location = new Point(204, 335);
+            txtpassword.Location = new Point(204, 332);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
             txtpassword.PlaceholderText = "Password";
             txtpassword.Size = new Size(532, 48);
-            txtpassword.TabIndex = 7;
+            txtpassword.TabIndex = 8;
+            txtpassword.TextChanged += txtusername_TextChanged;
+            // 
+            // txtusername
+            // 
+            txtusername.BorderStyle = BorderStyle.None;
+            txtusername.Cursor = Cursors.IBeam;
+            txtusername.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtusername.Location = new Point(201, 243);
+            txtusername.Multiline = true;
+            txtusername.Name = "txtusername";
+            txtusername.PlaceholderText = "Username";
+            txtusername.Size = new Size(532, 48);
+            txtusername.TabIndex = 7;
             // 
             // txtname
             // 
@@ -230,8 +231,8 @@
         private Panel panel7;
         private Panel panel5;
         private Panel panel3;
-        private TextBox txtusername;
         private TextBox txtpassword;
+        private TextBox txtusername;
         private TextBox txtname;
         private TextBox txtconfirm;
         private Panel panel12;

@@ -34,13 +34,17 @@ namespace GizBook
             string username = txtusername.Text;
             string password = txtpassword.Text;
 
-            if (UserStore.Users.TryGetValue(username, out string storedPassword))
+            if (UserStore.UserPasswords.TryGetValue(username, out string storedPassword))
             {
                 if (storedPassword == password)
                 {
-                    MessageBox.Show("Login successful!");
-                    frmRegisterAvatar f3 = new frmRegisterAvatar();
-                    f3.Show();
+                    // Retrieve the full name separately
+                    string fullName = UserStore.UserNames.ContainsKey(username) ? UserStore.UserNames[username] : "User";
+
+                    MessageBox.Show("Login successful! Welcome");
+                    frmHomePage dashboard = new frmHomePage();
+                    dashboard.name.Text = fullName;
+                    dashboard.Show();
                     this.Hide();
                 }
                 else

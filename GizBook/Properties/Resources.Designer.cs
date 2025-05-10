@@ -173,6 +173,26 @@ namespace GizBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap decks_nav {
+            get {
+                object obj = ResourceManager.GetObject("decks nav", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap decks_nav1 {
+            get {
+                object obj = ResourceManager.GetObject("decks nav1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Don_t_have_an_account__Create_one {
             get {
                 object obj = ResourceManager.GetObject("Don\'t have an account_ Create one", resourceCulture);
@@ -276,6 +296,16 @@ namespace GizBook.Properties {
         internal static System.Drawing.Bitmap Frame_427318962__2_ {
             get {
                 object obj = ResourceManager.GetObject("Frame 427318962 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Frame_427318969 {
+            get {
+                object obj = ResourceManager.GetObject("Frame 427318969", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

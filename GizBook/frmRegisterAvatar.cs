@@ -17,11 +17,18 @@ namespace GizBook
             InitializeComponent();
         }
 
-       
+
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            frmRegister f2 = new frmRegister();
+            f2.Show();
+            this.Hide();
         }
     }
 }
