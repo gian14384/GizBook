@@ -82,7 +82,7 @@ namespace GizBook
 
         private void frmHomePage_Load(object sender, EventArgs e)
         {
-            
+
         }
         private bool showingFirstImage = true;
 
@@ -185,6 +185,9 @@ namespace GizBook
 
             panel7.Top = panelDropdown.Visible ? panel7.Top + panelDropdown.Height : panel7.Top - panelHeight;
             btnadd.Top = panelDropdown.Visible ? btnadd.Top + panelDropdown.Height : btnadd.Top - panelHeight;
+
+            frmConfirmLogout fcl = new frmConfirmLogout();
+            fcl.Show();
         }
 
         private void panel4_Click(object sender, EventArgs e)
@@ -210,13 +213,19 @@ namespace GizBook
 
         private void panel14_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void panel14_Click(object sender, EventArgs e)
         {
             panel5.Visible = true;
             panel10.Visible = false;
+        }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            frmAddDeck fad = new frmAddDeck();
+            fad.Show();
         }
     }
 }

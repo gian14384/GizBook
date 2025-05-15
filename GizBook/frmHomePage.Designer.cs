@@ -35,7 +35,7 @@
             panel3 = new Panel();
             panel8 = new Panel();
             panelDropdown = new Panel();
-            button6 = new Button();
+            btnLogOut = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
@@ -129,7 +129,7 @@
             // 
             // panelDropdown
             // 
-            panelDropdown.Controls.Add(button6);
+            panelDropdown.Controls.Add(btnLogOut);
             panelDropdown.Controls.Add(button5);
             panelDropdown.Controls.Add(button4);
             panelDropdown.Controls.Add(button3);
@@ -141,20 +141,20 @@
             panelDropdown.TabIndex = 9;
             panelDropdown.Visible = false;
             // 
-            // button6
+            // btnLogOut
             // 
-            button6.BackColor = Color.Transparent;
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.BackgroundImageLayout = ImageLayout.Center;
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Location = new Point(-1, 220);
-            button6.Name = "button6";
-            button6.Size = new Size(291, 56);
-            button6.TabIndex = 12;
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click_1;
+            btnLogOut.BackColor = Color.Transparent;
+            btnLogOut.BackgroundImage = (Image)resources.GetObject("btnLogOut.BackgroundImage");
+            btnLogOut.BackgroundImageLayout = ImageLayout.Center;
+            btnLogOut.Cursor = Cursors.Hand;
+            btnLogOut.FlatAppearance.BorderSize = 0;
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Location = new Point(-1, 220);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(291, 56);
+            btnLogOut.TabIndex = 12;
+            btnLogOut.UseVisualStyleBackColor = false;
+            btnLogOut.Click += button6_Click_1;
             // 
             // button5
             // 
@@ -256,6 +256,7 @@
             btnadd.Name = "btnadd";
             btnadd.Size = new Size(293, 59);
             btnadd.TabIndex = 10;
+            btnadd.Click += btnadd_Click;
             // 
             // panel4
             // 
@@ -530,7 +531,7 @@
         private Button button3;
         private Button button2;
         private Button btndropdown;
-        private Button button6;
+        private Button btnLogOut;
         private Panel panel7;
         private Panel btnadd;
         private Panel panel4;

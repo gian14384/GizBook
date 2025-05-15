@@ -163,9 +163,39 @@ namespace GizBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_button {
+            get {
+                object obj = ResourceManager.GetObject("cancel button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Choose_Your_Avatar {
             get {
                 object obj = ResourceManager.GetObject("Choose Your Avatar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap confirm_button {
+            get {
+                object obj = ResourceManager.GetObject("confirm button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Confirm_logout_Text {
+            get {
+                object obj = ResourceManager.GetObject("Confirm logout Text", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
