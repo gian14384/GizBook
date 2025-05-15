@@ -158,6 +158,9 @@ namespace GizBook
 
             panel7.Top = panelDropdown.Visible ? panel7.Top + panelDropdown.Height : panel7.Top - panelHeight;
             btnadd.Top = panelDropdown.Visible ? btnadd.Top + panelDropdown.Height : btnadd.Top - panelHeight;
+
+            frmChangePrivacy fcp = new frmChangePrivacy();
+            fcp.Show();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -176,6 +179,9 @@ namespace GizBook
 
             panel7.Top = panelDropdown.Visible ? panel7.Top + panelDropdown.Height : panel7.Top - panelHeight;
             btnadd.Top = panelDropdown.Visible ? btnadd.Top + panelDropdown.Height : btnadd.Top - panelHeight;
+
+            frmContactUs fcs = new frmContactUs();
+            fcs.Show();
         }
 
         private void button6_Click_1(object sender, EventArgs e)

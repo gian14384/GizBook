@@ -29,7 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContactUs));
+            panel1 = new Panel();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Center;
+            panel1.Location = new Point(787, 669);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(211, 100);
+            panel1.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(125, 176);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(860, 67);
+            textBox1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Location = new Point(125, 354);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(860, 295);
+            textBox2.TabIndex = 2;
             // 
             // frmContactUs
             // 
@@ -39,14 +70,22 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1103, 804);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmContactUs";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmContactUs";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Panel panel1;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
