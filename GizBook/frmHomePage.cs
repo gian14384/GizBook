@@ -12,6 +12,13 @@ namespace GizBook
 {
     public partial class frmHomePage : Form
     {
+        private frmLogin loginInstance;
+
+        public frmHomePage(frmLogin login)
+        {
+            InitializeComponent();
+            loginInstance = login;
+        }
         public frmHomePage()
         {
             InitializeComponent();
@@ -77,7 +84,9 @@ namespace GizBook
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            frmProfilePage fpp = new frmProfilePage();
+            fpp.Show();
+            this.Hide();
         }
 
         private void frmHomePage_Load(object sender, EventArgs e)
@@ -139,6 +148,11 @@ namespace GizBook
 
             panel7.Top = panelDropdown.Visible ? panel7.Top + panelDropdown.Height : panel7.Top - panelHeight;
             btnadd.Top = panelDropdown.Visible ? btnadd.Top + panelDropdown.Height : btnadd.Top - panelHeight;
+
+            string imagePath = @"D:\Final Project\Images\dark mode\login\bg.png";
+            frmLogin login = new frmLogin();
+            login.ChangeBackgroundImage(imagePath);
+            login.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void btndropdown_Click(object sender, EventArgs e)
@@ -170,6 +184,9 @@ namespace GizBook
 
             panel7.Top = panelDropdown.Visible ? panel7.Top + panelDropdown.Height : panel7.Top - panelHeight;
             btnadd.Top = panelDropdown.Visible ? btnadd.Top + panelDropdown.Height : btnadd.Top - panelHeight;
+
+            frmFAQ faq = new frmFAQ();
+            faq.Show();
         }
 
         private void button5_Click_2(object sender, EventArgs e)
@@ -198,7 +215,7 @@ namespace GizBook
 
         private void panel4_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panel9_Click(object sender, EventArgs e)
@@ -232,6 +249,19 @@ namespace GizBook
         {
             frmAddDeck fad = new frmAddDeck();
             fad.Show();
+        }
+
+        private void panel7_Click(object sender, EventArgs e)
+        {
+            frmLearningMode flm = new frmLearningMode();
+            flm.Show();
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            frmDeckPage fdp = new frmDeckPage();
+            fdp.Show();
+            this.Hide();
         }
     }
 }

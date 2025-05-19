@@ -9,6 +9,11 @@ namespace GizBook
             txtpassword.UseSystemPasswordChar = true;
 
         }
+        public void ChangeBackgroundImage(string imagePath)
+        {
+            this.BackgroundImage = Image.FromFile(imagePath);
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+        }
 
 
 

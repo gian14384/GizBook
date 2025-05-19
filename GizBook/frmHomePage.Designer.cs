@@ -116,6 +116,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(290, 65);
             panel3.TabIndex = 3;
+            panel3.Click += panel3_Click;
             // 
             // panel8
             // 
@@ -245,6 +246,7 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(293, 69);
             panel7.TabIndex = 7;
+            panel7.Click += panel7_Click;
             // 
             // btnadd
             // 
@@ -492,11 +494,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1440, 1024);
+            Controls.Add(panel7);
             Controls.Add(panel5);
             Controls.Add(panel16);
             Controls.Add(panel4);
             Controls.Add(btnadd);
-            Controls.Add(panel7);
             Controls.Add(btndropdown);
             Controls.Add(panelDropdown);
             Controls.Add(panel3);
