@@ -35,7 +35,10 @@
             panel4 = new Panel();
             panel5 = new Panel();
             panel6 = new Panel();
+            deckContainer = new FlowLayoutPanel();
+            btnAddDeck = new Button();
             panel1.SuspendLayout();
+            deckContainer.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -100,12 +103,32 @@
             panel6.Size = new Size(1231, 16);
             panel6.TabIndex = 4;
             // 
+            // deckContainer
+            // 
+            deckContainer.Controls.Add(btnAddDeck);
+            deckContainer.Location = new Point(130, 187);
+            deckContainer.Name = "deckContainer";
+            deckContainer.Size = new Size(1231, 825);
+            deckContainer.TabIndex = 5;
+            // 
+            // btnAddDeck
+            // 
+            btnAddDeck.BackgroundImage = (Image)resources.GetObject("btnAddDeck.BackgroundImage");
+            btnAddDeck.BackgroundImageLayout = ImageLayout.Center;
+            btnAddDeck.Location = new Point(3, 3);
+            btnAddDeck.Name = "btnAddDeck";
+            btnAddDeck.Size = new Size(213, 116);
+            btnAddDeck.TabIndex = 0;
+            btnAddDeck.UseVisualStyleBackColor = true;
+            btnAddDeck.Click += btnAddDeck_Click;
+            // 
             // frmDeckPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1440, 1024);
+            Controls.Add(deckContainer);
             Controls.Add(panel6);
             Controls.Add(panel5);
             Controls.Add(panel4);
@@ -115,7 +138,9 @@
             Name = "frmDeckPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmDeckPage";
+            Load += frmDeckPage_Load;
             panel1.ResumeLayout(false);
+            deckContainer.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -127,5 +152,7 @@
         private Panel panel4;
         private Panel panel5;
         private Panel panel6;
+        private FlowLayoutPanel deckContainer;
+        private Button btnAddDeck;
     }
 }

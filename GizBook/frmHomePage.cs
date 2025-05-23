@@ -89,9 +89,12 @@ namespace GizBook
             this.Hide();
         }
 
+       
+      
+
         private void frmHomePage_Load(object sender, EventArgs e)
         {
-
+            
         }
         private bool showingFirstImage = true;
 
@@ -215,7 +218,7 @@ namespace GizBook
 
         private void panel4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel9_Click(object sender, EventArgs e)
@@ -262,6 +265,11 @@ namespace GizBook
             frmDeckPage fdp = new frmDeckPage();
             fdp.Show();
             this.Hide();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

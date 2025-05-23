@@ -113,5 +113,10 @@ namespace GizBook
         {
 
         }
+
+        private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

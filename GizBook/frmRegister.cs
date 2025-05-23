@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.DataFormats;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GizBook
 {
@@ -17,6 +18,8 @@ namespace GizBook
         {
             InitializeComponent();
         }
+
+      
 
 
 
@@ -32,6 +35,8 @@ namespace GizBook
 
         private void panel7_Click(object sender, EventArgs e)
         {
+            
+
             string username = txtusername.Text;   // Used for login
             string password = txtpassword.Text;
             string confirmPass = txtconfirm.Text;
@@ -61,8 +66,10 @@ namespace GizBook
                         UserStore.UserNames.Add(username, fullName);
 
                         MessageBox.Show("Registration successful!");
-                        frmRegisterAvatar f3 = new frmRegisterAvatar();
-                        f3.Show();
+                        frmRegisterAvatar fra = new frmRegisterAvatar();
+                        fra.placeholdername.Text = fullName;
+                        fra.placeholdername2.Text = username;
+                        fra.Show();
                         this.Hide();
                     }
                 }
@@ -88,6 +95,16 @@ namespace GizBook
         }
 
         private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusername_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtname_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -141,6 +141,7 @@
             txtusername.PlaceholderText = "Username";
             txtusername.Size = new Size(532, 48);
             txtusername.TabIndex = 7;
+            txtusername.TextChanged += txtusername_TextChanged_1;
             // 
             // txtname
             // 
@@ -154,6 +155,7 @@
             txtname.PlaceholderText = "Name";
             txtname.Size = new Size(532, 48);
             txtname.TabIndex = 6;
+            txtname.TextChanged += txtname_TextChanged;
             // 
             // panel8
             // 
@@ -232,12 +234,12 @@
         private Panel panel5;
         private Panel panel3;
         private TextBox txtpassword;
-        private TextBox txtusername;
         private TextBox txtname;
         private TextBox txtconfirm;
         private Panel panel12;
         private Panel panel11;
         private Panel panel10;
         private Panel panel9;
+        public TextBox txtusername;
     }
 }

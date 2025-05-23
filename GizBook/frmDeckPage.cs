@@ -35,5 +35,17 @@ namespace GizBook
             frmAddDeck fad = new frmAddDeck();
             fad.Show();
         }
+
+        private void frmDeckPage_Load(object sender, EventArgs e)
+        {
+            deckContainer.FlowDirection = FlowDirection.LeftToRight;
+            deckContainer.AutoScroll = true;
+        }
+
+        private void btnAddDeck_Click(object sender, EventArgs e)
+        {
+            frmAddDeck fad = new frmAddDeck();  
+            fad.Show();
+        }
     }
 }

@@ -33,18 +33,18 @@
             panel2 = new Panel();
             panel3 = new Panel();
             panel4 = new Panel();
-            textBox1 = new TextBox();
+            txtDeckTitle = new TextBox();
             panel5 = new Panel();
-            panel6 = new Panel();
-            panel7 = new Panel();
-            panel8 = new Panel();
-            panel9 = new Panel();
-            panel10 = new Panel();
-            panel11 = new Panel();
-            panel12 = new Panel();
-            panel13 = new Panel();
-            panel14 = new Panel();
-            panel15 = new Panel();
+            btn1 = new Panel();
+            btn2 = new Panel();
+            btn3 = new Panel();
+            btn4 = new Panel();
+            btn5 = new Panel();
+            btn6 = new Panel();
+            btn7 = new Panel();
+            btn8 = new Panel();
+            btn9 = new Panel();
+            btn10 = new Panel();
             panel16 = new Panel();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
@@ -53,7 +53,7 @@
             panel18 = new Panel();
             panel19 = new Panel();
             panel20 = new Panel();
-            panel21 = new Panel();
+            btnSaveDeck = new Panel();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
@@ -92,22 +92,22 @@
             panel4.BackColor = Color.Transparent;
             panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
             panel4.BackgroundImageLayout = ImageLayout.Center;
-            panel4.Controls.Add(textBox1);
+            panel4.Controls.Add(txtDeckTitle);
             panel4.Location = new Point(22, 190);
             panel4.Name = "panel4";
             panel4.Size = new Size(645, 64);
             panel4.TabIndex = 3;
             // 
-            // textBox1
+            // txtDeckTitle
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(12, 13);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " e.g. ITEC 103";
-            textBox1.Size = new Size(621, 40);
-            textBox1.TabIndex = 0;
+            txtDeckTitle.BorderStyle = BorderStyle.None;
+            txtDeckTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDeckTitle.Location = new Point(12, 13);
+            txtDeckTitle.Multiline = true;
+            txtDeckTitle.Name = "txtDeckTitle";
+            txtDeckTitle.PlaceholderText = " e.g. ITEC 103";
+            txtDeckTitle.Size = new Size(621, 40);
+            txtDeckTitle.TabIndex = 0;
             // 
             // panel5
             // 
@@ -119,105 +119,107 @@
             panel5.Size = new Size(129, 27);
             panel5.TabIndex = 4;
             // 
-            // panel6
+            // btn1
             // 
-            panel6.BackColor = Color.Transparent;
-            panel6.BackgroundImage = (Image)resources.GetObject("panel6.BackgroundImage");
-            panel6.BackgroundImageLayout = ImageLayout.Center;
-            panel6.Location = new Point(34, 304);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(54, 55);
-            panel6.TabIndex = 5;
+            btn1.BackColor = Color.Transparent;
+            btn1.BackgroundImage = (Image)resources.GetObject("btn1.BackgroundImage");
+            btn1.BackgroundImageLayout = ImageLayout.Center;
+            btn1.Location = new Point(34, 304);
+            btn1.Name = "btn1";
+            btn1.Size = new Size(54, 55);
+            btn1.TabIndex = 5;
+            btn1.Click += panel6_Click;
+            btn1.Paint += panel6_Paint;
             // 
-            // panel7
+            // btn2
             // 
-            panel7.BackColor = Color.Transparent;
-            panel7.BackgroundImage = (Image)resources.GetObject("panel7.BackgroundImage");
-            panel7.BackgroundImageLayout = ImageLayout.Center;
-            panel7.Location = new Point(97, 304);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(54, 55);
-            panel7.TabIndex = 6;
+            btn2.BackColor = Color.Transparent;
+            btn2.BackgroundImage = (Image)resources.GetObject("btn2.BackgroundImage");
+            btn2.BackgroundImageLayout = ImageLayout.Center;
+            btn2.Location = new Point(97, 304);
+            btn2.Name = "btn2";
+            btn2.Size = new Size(54, 55);
+            btn2.TabIndex = 6;
             // 
-            // panel8
+            // btn3
             // 
-            panel8.BackColor = Color.Transparent;
-            panel8.BackgroundImage = (Image)resources.GetObject("panel8.BackgroundImage");
-            panel8.BackgroundImageLayout = ImageLayout.Center;
-            panel8.Location = new Point(157, 304);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(54, 55);
-            panel8.TabIndex = 7;
+            btn3.BackColor = Color.Transparent;
+            btn3.BackgroundImage = (Image)resources.GetObject("btn3.BackgroundImage");
+            btn3.BackgroundImageLayout = ImageLayout.Center;
+            btn3.Location = new Point(157, 304);
+            btn3.Name = "btn3";
+            btn3.Size = new Size(54, 55);
+            btn3.TabIndex = 7;
             // 
-            // panel9
+            // btn4
             // 
-            panel9.BackColor = Color.Transparent;
-            panel9.BackgroundImage = (Image)resources.GetObject("panel9.BackgroundImage");
-            panel9.BackgroundImageLayout = ImageLayout.Center;
-            panel9.Location = new Point(219, 304);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(54, 55);
-            panel9.TabIndex = 7;
+            btn4.BackColor = Color.Transparent;
+            btn4.BackgroundImage = (Image)resources.GetObject("btn4.BackgroundImage");
+            btn4.BackgroundImageLayout = ImageLayout.Center;
+            btn4.Location = new Point(219, 304);
+            btn4.Name = "btn4";
+            btn4.Size = new Size(54, 55);
+            btn4.TabIndex = 7;
             // 
-            // panel10
+            // btn5
             // 
-            panel10.BackColor = Color.Transparent;
-            panel10.BackgroundImage = (Image)resources.GetObject("panel10.BackgroundImage");
-            panel10.BackgroundImageLayout = ImageLayout.Center;
-            panel10.Location = new Point(279, 304);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(54, 55);
-            panel10.TabIndex = 7;
+            btn5.BackColor = Color.Transparent;
+            btn5.BackgroundImage = (Image)resources.GetObject("btn5.BackgroundImage");
+            btn5.BackgroundImageLayout = ImageLayout.Center;
+            btn5.Location = new Point(279, 304);
+            btn5.Name = "btn5";
+            btn5.Size = new Size(54, 55);
+            btn5.TabIndex = 7;
             // 
-            // panel11
+            // btn6
             // 
-            panel11.BackColor = Color.Transparent;
-            panel11.BackgroundImage = (Image)resources.GetObject("panel11.BackgroundImage");
-            panel11.BackgroundImageLayout = ImageLayout.Center;
-            panel11.Location = new Point(339, 304);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(54, 55);
-            panel11.TabIndex = 7;
+            btn6.BackColor = Color.Transparent;
+            btn6.BackgroundImage = (Image)resources.GetObject("btn6.BackgroundImage");
+            btn6.BackgroundImageLayout = ImageLayout.Center;
+            btn6.Location = new Point(339, 304);
+            btn6.Name = "btn6";
+            btn6.Size = new Size(54, 55);
+            btn6.TabIndex = 7;
             // 
-            // panel12
+            // btn7
             // 
-            panel12.BackColor = Color.Transparent;
-            panel12.BackgroundImage = (Image)resources.GetObject("panel12.BackgroundImage");
-            panel12.BackgroundImageLayout = ImageLayout.Center;
-            panel12.Location = new Point(399, 304);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(54, 55);
-            panel12.TabIndex = 8;
+            btn7.BackColor = Color.Transparent;
+            btn7.BackgroundImage = (Image)resources.GetObject("btn7.BackgroundImage");
+            btn7.BackgroundImageLayout = ImageLayout.Center;
+            btn7.Location = new Point(399, 304);
+            btn7.Name = "btn7";
+            btn7.Size = new Size(54, 55);
+            btn7.TabIndex = 8;
             // 
-            // panel13
+            // btn8
             // 
-            panel13.BackColor = Color.Transparent;
-            panel13.BackgroundImage = (Image)resources.GetObject("panel13.BackgroundImage");
-            panel13.BackgroundImageLayout = ImageLayout.Center;
-            panel13.Location = new Point(459, 304);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(54, 55);
-            panel13.TabIndex = 7;
+            btn8.BackColor = Color.Transparent;
+            btn8.BackgroundImage = (Image)resources.GetObject("btn8.BackgroundImage");
+            btn8.BackgroundImageLayout = ImageLayout.Center;
+            btn8.Location = new Point(459, 304);
+            btn8.Name = "btn8";
+            btn8.Size = new Size(54, 55);
+            btn8.TabIndex = 7;
             // 
-            // panel14
+            // btn9
             // 
-            panel14.BackColor = Color.Transparent;
-            panel14.BackgroundImage = (Image)resources.GetObject("panel14.BackgroundImage");
-            panel14.BackgroundImageLayout = ImageLayout.Center;
-            panel14.Location = new Point(519, 304);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(54, 55);
-            panel14.TabIndex = 7;
+            btn9.BackColor = Color.Transparent;
+            btn9.BackgroundImage = (Image)resources.GetObject("btn9.BackgroundImage");
+            btn9.BackgroundImageLayout = ImageLayout.Center;
+            btn9.Location = new Point(519, 304);
+            btn9.Name = "btn9";
+            btn9.Size = new Size(54, 55);
+            btn9.TabIndex = 7;
             // 
-            // panel15
+            // btn10
             // 
-            panel15.BackColor = Color.Transparent;
-            panel15.BackgroundImage = (Image)resources.GetObject("panel15.BackgroundImage");
-            panel15.BackgroundImageLayout = ImageLayout.Center;
-            panel15.Location = new Point(579, 304);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(54, 55);
-            panel15.TabIndex = 7;
+            btn10.BackColor = Color.Transparent;
+            btn10.BackgroundImage = (Image)resources.GetObject("btn10.BackgroundImage");
+            btn10.BackgroundImageLayout = ImageLayout.Center;
+            btn10.Location = new Point(579, 304);
+            btn10.Name = "btn10";
+            btn10.Size = new Size(54, 55);
+            btn10.TabIndex = 7;
             // 
             // panel16
             // 
@@ -302,15 +304,17 @@
             panel20.TabIndex = 16;
             panel20.Click += panel20_Click;
             // 
-            // panel21
+            // btnSaveDeck
             // 
-            panel21.BackColor = Color.Transparent;
-            panel21.BackgroundImage = (Image)resources.GetObject("panel21.BackgroundImage");
-            panel21.BackgroundImageLayout = ImageLayout.Center;
-            panel21.Location = new Point(499, 524);
-            panel21.Name = "panel21";
-            panel21.Size = new Size(156, 47);
-            panel21.TabIndex = 17;
+            btnSaveDeck.BackColor = Color.Transparent;
+            btnSaveDeck.BackgroundImage = (Image)resources.GetObject("btnSaveDeck.BackgroundImage");
+            btnSaveDeck.BackgroundImageLayout = ImageLayout.Center;
+            btnSaveDeck.Location = new Point(499, 524);
+            btnSaveDeck.Name = "btnSaveDeck";
+            btnSaveDeck.Size = new Size(156, 47);
+            btnSaveDeck.TabIndex = 17;
+            btnSaveDeck.Click += btnSaveDeck_Click;
+            btnSaveDeck.Paint += btnSaveDeck_Paint;
             // 
             // frmAddDeck
             // 
@@ -318,7 +322,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(679, 586);
-            Controls.Add(panel21);
+            Controls.Add(btnSaveDeck);
             Controls.Add(panel20);
             Controls.Add(panel19);
             Controls.Add(panel18);
@@ -327,16 +331,16 @@
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(panel16);
-            Controls.Add(panel15);
-            Controls.Add(panel14);
-            Controls.Add(panel13);
-            Controls.Add(panel12);
-            Controls.Add(panel11);
-            Controls.Add(panel10);
-            Controls.Add(panel9);
-            Controls.Add(panel8);
-            Controls.Add(panel7);
-            Controls.Add(panel6);
+            Controls.Add(btn10);
+            Controls.Add(btn9);
+            Controls.Add(btn8);
+            Controls.Add(btn7);
+            Controls.Add(btn6);
+            Controls.Add(btn5);
+            Controls.Add(btn4);
+            Controls.Add(btn3);
+            Controls.Add(btn2);
+            Controls.Add(btn1);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
@@ -346,6 +350,7 @@
             Name = "frmAddDeck";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAddDeck";
+            Load += frmAddDeck_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ResumeLayout(false);
@@ -358,18 +363,18 @@
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
-        private TextBox textBox1;
+        private TextBox txtDeckTitle;
         private Panel panel5;
-        private Panel panel6;
-        private Panel panel7;
-        private Panel panel8;
-        private Panel panel9;
-        private Panel panel10;
-        private Panel panel11;
-        private Panel panel12;
-        private Panel panel13;
-        private Panel panel14;
-        private Panel panel15;
+        private Panel btn1;
+        private Panel btn2;
+        private Panel btn3;
+        private Panel btn4;
+        private Panel btn5;
+        private Panel btn6;
+        private Panel btn7;
+        private Panel btn8;
+        private Panel btn9;
+        private Panel btn10;
         private Panel panel16;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
@@ -378,6 +383,6 @@
         private Panel panel18;
         private Panel panel19;
         private Panel panel20;
-        private Panel panel21;
+        private Panel btnSaveDeck;
     }
 }

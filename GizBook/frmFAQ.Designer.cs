@@ -32,8 +32,11 @@
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
-            btndropdown1 = new Panel();
             paneldropdown1 = new Panel();
+            btndropdown2 = new Panel();
+            btndropdown3 = new Panel();
+            btndropdown1 = new Panel();
+            paneldropdown2 = new Panel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -67,6 +70,38 @@
             panel3.Size = new Size(123, 46);
             panel3.TabIndex = 1;
             // 
+            // paneldropdown1
+            // 
+            paneldropdown1.BackColor = Color.Transparent;
+            paneldropdown1.BackgroundImage = (Image)resources.GetObject("paneldropdown1.BackgroundImage");
+            paneldropdown1.BackgroundImageLayout = ImageLayout.Center;
+            paneldropdown1.Location = new Point(122, 242);
+            paneldropdown1.Name = "paneldropdown1";
+            paneldropdown1.Size = new Size(1164, 85);
+            paneldropdown1.TabIndex = 3;
+            paneldropdown1.Visible = false;
+            // 
+            // btndropdown2
+            // 
+            btndropdown2.BackColor = Color.Transparent;
+            btndropdown2.BackgroundImage = (Image)resources.GetObject("btndropdown2.BackgroundImage");
+            btndropdown2.BackgroundImageLayout = ImageLayout.Center;
+            btndropdown2.Location = new Point(122, 242);
+            btndropdown2.Name = "btndropdown2";
+            btndropdown2.Size = new Size(1266, 85);
+            btndropdown2.TabIndex = 4;
+            btndropdown2.Click += btndropdown2_Click_2;
+            // 
+            // btndropdown3
+            // 
+            btndropdown3.BackColor = Color.Transparent;
+            btndropdown3.BackgroundImage = (Image)resources.GetObject("btndropdown3.BackgroundImage");
+            btndropdown3.BackgroundImageLayout = ImageLayout.Center;
+            btndropdown3.Location = new Point(122, 333);
+            btndropdown3.Name = "btndropdown3";
+            btndropdown3.Size = new Size(1266, 85);
+            btndropdown3.TabIndex = 5;
+            // 
             // btndropdown1
             // 
             btndropdown1.BackColor = Color.Transparent;
@@ -79,16 +114,16 @@
             btndropdown1.Click += btndropdown1_Click;
             btndropdown1.Paint += btndropdown1_Paint;
             // 
-            // paneldropdown1
+            // paneldropdown2
             // 
-            paneldropdown1.BackColor = Color.Transparent;
-            paneldropdown1.BackgroundImage = (Image)resources.GetObject("paneldropdown1.BackgroundImage");
-            paneldropdown1.BackgroundImageLayout = ImageLayout.Center;
-            paneldropdown1.Location = new Point(122, 242);
-            paneldropdown1.Name = "paneldropdown1";
-            paneldropdown1.Size = new Size(1164, 85);
-            paneldropdown1.TabIndex = 3;
-            paneldropdown1.Visible = false;
+            paneldropdown2.BackColor = Color.Transparent;
+            paneldropdown2.BackgroundImage = (Image)resources.GetObject("paneldropdown2.BackgroundImage");
+            paneldropdown2.BackgroundImageLayout = ImageLayout.Center;
+            paneldropdown2.Location = new Point(122, 333);
+            paneldropdown2.Name = "paneldropdown2";
+            paneldropdown2.Size = new Size(1164, 85);
+            paneldropdown2.TabIndex = 5;
+            paneldropdown2.Visible = false;
             // 
             // frmFAQ
             // 
@@ -96,14 +131,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1440, 1024);
-            Controls.Add(paneldropdown1);
             Controls.Add(btndropdown1);
+            Controls.Add(btndropdown2);
+            Controls.Add(btndropdown3);
+            Controls.Add(paneldropdown2);
+            Controls.Add(paneldropdown1);
             Controls.Add(panel3);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmFAQ";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmFAQ";
+            Load += frmFAQ_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -113,7 +152,10 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private Panel btndropdown1;
         private Panel paneldropdown1;
+        private Panel btndropdown2;
+        private Panel btndropdown3;
+        private Panel btndropdown1;
+        private Panel paneldropdown2;
     }
 }

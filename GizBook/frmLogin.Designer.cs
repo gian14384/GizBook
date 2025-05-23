@@ -195,6 +195,7 @@
             txtusername.PlaceholderText = "Username";
             txtusername.Size = new Size(532, 48);
             txtusername.TabIndex = 16;
+            txtusername.TextChanged += txtusername_TextChanged;
             // 
             // txtpassword
             // 
