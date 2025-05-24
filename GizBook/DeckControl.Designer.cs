@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblTitle = new Label();
+            titleLabel = new Label();
             lblCardCount = new Label();
-            deckColor = new Panel();
+            deckColorPanel = new Panel();
             SuspendLayout();
             // 
-            // lblTitle
+            // titleLabel
             // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(3, 60);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(65, 25);
-            lblTitle.TabIndex = 0;
-            lblTitle.Text = "label1";
+            titleLabel.AutoSize = true;
+            titleLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleLabel.Location = new Point(3, 60);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new Size(65, 25);
+            titleLabel.TabIndex = 0;
+            titleLabel.Text = "label1";
             // 
             // lblCardCount
             // 
@@ -54,24 +54,24 @@
             lblCardCount.Text = "label2";
             lblCardCount.Click += lblCardCount_Click;
             // 
-            // deckColor
+            // deckColorPanel
             // 
-            deckColor.BackColor = Color.Transparent;
-            deckColor.BackgroundImageLayout = ImageLayout.Center;
-            deckColor.Location = new Point(0, 0);
-            deckColor.Name = "deckColor";
-            deckColor.Size = new Size(213, 43);
-            deckColor.TabIndex = 2;
+            deckColorPanel.BackColor = Color.Transparent;
+            deckColorPanel.BackgroundImageLayout = ImageLayout.Center;
+            deckColorPanel.Location = new Point(0, 0);
+            deckColorPanel.Name = "deckColorPanel";
+            deckColorPanel.Size = new Size(213, 43);
+            deckColorPanel.TabIndex = 2;
             // 
             // DeckControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(deckColor);
+            Controls.Add(deckColorPanel);
             Controls.Add(lblCardCount);
-            Controls.Add(lblTitle);
+            Controls.Add(titleLabel);
             Name = "DeckControl";
-            Size = new Size(213, 109);
+            Size = new Size(213, 116);
             Load += DeckControl_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -79,8 +79,8 @@
 
         #endregion
 
-        private Label lblTitle;
+        private Label titleLabel;
         private Label lblCardCount;
-        public Panel deckColor;
+        public Panel deckColorPanel;
     }
 }

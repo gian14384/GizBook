@@ -24,7 +24,7 @@ namespace GizBook
 
         public void UpdateDeckColor(int r, int g, int b)
         {
-            deckColor.BackColor = Color.FromArgb(r, g, b);
+            deckColorPanel.BackColor = Color.FromArgb(r, g, b);
         }
 
         private void DeckControl_Load(object sender, EventArgs e)

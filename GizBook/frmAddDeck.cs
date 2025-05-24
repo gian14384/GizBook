@@ -45,17 +45,7 @@ namespace GizBook
 
         private void panel6_Click(object sender, EventArgs e)
         {
-            int red = 255;
-            int green = 138;
-            int blue = 101;
 
-            DeckControl form2 = new DeckControl();
-
-
-            form2.UpdatePanelColor(red, green, blue);
-
-
-            form2.Show();
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -63,7 +53,20 @@ namespace GizBook
 
         }
 
-
+        private Dictionary<string, Color> buttonColors = new Dictionary<string, Color>
+{
+         { "btn1", Color.FromArgb(255, 0, 0) },
+         { "btn2", Color.FromArgb(0, 0, 255) },
+         { "btn3", Color.FromArgb(0, 255, 0) },
+         { "btn4", Color.FromArgb(255, 0, 0) },
+         { "btn5", Color.FromArgb(0, 0, 255) },
+         { "btn6", Color.FromArgb(0, 255, 0) },
+         { "btn7", Color.FromArgb(255, 0, 0) },
+         { "btn8", Color.FromArgb(0, 0, 255) },
+         { "btn9", Color.FromArgb(0, 255, 0) },
+         { "btn10", Color.FromArgb(0, 255, 0) }
+    // Add more buttons as needed
+};
 
         private void frmAddDeck_Load(object sender, EventArgs e)
         {
@@ -78,21 +81,7 @@ namespace GizBook
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int red = 100;
-            int green = 200;
-            int blue = 150;
-
-            // Get the active frmDeckPage instance
-            frmDeckPage deckPageInstance = Application.OpenForms["frmDeckPage"] as frmDeckPage;
-
-            if (deckPageInstance != null && deckPageInstance.deckControlInstance != null)
-            {
-                deckPageInstance.deckControlInstance.UpdateDeckColor(red, green, blue);
-            }
-            else
-            {
-                MessageBox.Show("frmDeckPage or DeckControl instance not found.");
-            }
+            
         }
     }
 }
