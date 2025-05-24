@@ -81,6 +81,6 @@
 
         private Label lblTitle;
         private Label lblCardCount;
-        private Panel deckColor;
+        public Panel deckColor;
     }
 }

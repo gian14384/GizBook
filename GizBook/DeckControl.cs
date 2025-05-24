@@ -19,8 +19,12 @@ namespace GizBook
 
         public void UpdateDeck(string newTitle, Color newColor)
         {
-            lblTitle.Text = newTitle;
-            this.BackColor = newColor;
+            
+        }
+
+        public void UpdateDeckColor(int r, int g, int b)
+        {
+            deckColor.BackColor = Color.FromArgb(r, g, b);
         }
 
         private void DeckControl_Load(object sender, EventArgs e)

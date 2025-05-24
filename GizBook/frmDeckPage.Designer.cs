@@ -36,7 +36,11 @@
             panel5 = new Panel();
             panel6 = new Panel();
             deckContainer = new FlowLayoutPanel();
-            btnAddDeck = new Button();
+            btnAddDeck1 = new Button();
+            btnAddDeck2 = new Button();
+            btnAddDeck3 = new Button();
+            btnAddDeck4 = new Button();
+            btnAddDeck5 = new Button();
             panel1.SuspendLayout();
             deckContainer.SuspendLayout();
             SuspendLayout();
@@ -105,22 +109,67 @@
             // 
             // deckContainer
             // 
-            deckContainer.Controls.Add(btnAddDeck);
+            deckContainer.Controls.Add(btnAddDeck1);
+            deckContainer.Controls.Add(btnAddDeck2);
+            deckContainer.Controls.Add(btnAddDeck3);
+            deckContainer.Controls.Add(btnAddDeck4);
+            deckContainer.Controls.Add(btnAddDeck5);
             deckContainer.Location = new Point(130, 187);
             deckContainer.Name = "deckContainer";
             deckContainer.Size = new Size(1231, 825);
             deckContainer.TabIndex = 5;
+            deckContainer.Paint += deckContainer_Paint;
             // 
-            // btnAddDeck
+            // btnAddDeck1
             // 
-            btnAddDeck.BackgroundImage = (Image)resources.GetObject("btnAddDeck.BackgroundImage");
-            btnAddDeck.BackgroundImageLayout = ImageLayout.Center;
-            btnAddDeck.Location = new Point(3, 3);
-            btnAddDeck.Name = "btnAddDeck";
-            btnAddDeck.Size = new Size(213, 116);
-            btnAddDeck.TabIndex = 0;
-            btnAddDeck.UseVisualStyleBackColor = true;
-            btnAddDeck.Click += btnAddDeck_Click;
+            btnAddDeck1.BackgroundImage = (Image)resources.GetObject("btnAddDeck1.BackgroundImage");
+            btnAddDeck1.BackgroundImageLayout = ImageLayout.Center;
+            btnAddDeck1.Location = new Point(3, 3);
+            btnAddDeck1.Name = "btnAddDeck1";
+            btnAddDeck1.Size = new Size(213, 116);
+            btnAddDeck1.TabIndex = 0;
+            btnAddDeck1.UseVisualStyleBackColor = true;
+            btnAddDeck1.Click += btnAddDeck_Click;
+            // 
+            // btnAddDeck2
+            // 
+            btnAddDeck2.BackgroundImage = (Image)resources.GetObject("btnAddDeck2.BackgroundImage");
+            btnAddDeck2.BackgroundImageLayout = ImageLayout.Center;
+            btnAddDeck2.Location = new Point(222, 3);
+            btnAddDeck2.Name = "btnAddDeck2";
+            btnAddDeck2.Size = new Size(213, 116);
+            btnAddDeck2.TabIndex = 1;
+            btnAddDeck2.UseVisualStyleBackColor = true;
+            // 
+            // btnAddDeck3
+            // 
+            btnAddDeck3.BackgroundImage = (Image)resources.GetObject("btnAddDeck3.BackgroundImage");
+            btnAddDeck3.BackgroundImageLayout = ImageLayout.Center;
+            btnAddDeck3.Location = new Point(441, 3);
+            btnAddDeck3.Name = "btnAddDeck3";
+            btnAddDeck3.Size = new Size(213, 116);
+            btnAddDeck3.TabIndex = 2;
+            btnAddDeck3.UseVisualStyleBackColor = true;
+            // 
+            // btnAddDeck4
+            // 
+            btnAddDeck4.BackgroundImage = (Image)resources.GetObject("btnAddDeck4.BackgroundImage");
+            btnAddDeck4.BackgroundImageLayout = ImageLayout.Center;
+            btnAddDeck4.Location = new Point(660, 3);
+            btnAddDeck4.Name = "btnAddDeck4";
+            btnAddDeck4.Size = new Size(213, 116);
+            btnAddDeck4.TabIndex = 3;
+            btnAddDeck4.UseVisualStyleBackColor = true;
+            // 
+            // btnAddDeck5
+            // 
+            btnAddDeck5.BackgroundImage = (Image)resources.GetObject("btnAddDeck5.BackgroundImage");
+            btnAddDeck5.BackgroundImageLayout = ImageLayout.Center;
+            btnAddDeck5.Location = new Point(879, 3);
+            btnAddDeck5.Name = "btnAddDeck5";
+            btnAddDeck5.Size = new Size(213, 116);
+            btnAddDeck5.TabIndex = 4;
+            btnAddDeck5.UseVisualStyleBackColor = true;
             // 
             // frmDeckPage
             // 
@@ -152,7 +201,11 @@
         private Panel panel4;
         private Panel panel5;
         private Panel panel6;
-        private FlowLayoutPanel deckContainer;
-        private Button btnAddDeck;
+        private Button btnAddDeck1;
+        private Button btnAddDeck2;
+        private Button btnAddDeck3;
+        private Button btnAddDeck4;
+        private Button btnAddDeck5;
+        public FlowLayoutPanel deckContainer;
     }
 }

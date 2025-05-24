@@ -35,7 +35,6 @@
             panel4 = new Panel();
             txtDeckTitle = new TextBox();
             panel5 = new Panel();
-            btn1 = new Panel();
             btn2 = new Panel();
             btn3 = new Panel();
             btn4 = new Panel();
@@ -54,6 +53,7 @@
             panel19 = new Panel();
             panel20 = new Panel();
             btnSaveDeck = new Panel();
+            button1 = new Button();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
@@ -118,18 +118,6 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(129, 27);
             panel5.TabIndex = 4;
-            // 
-            // btn1
-            // 
-            btn1.BackColor = Color.Transparent;
-            btn1.BackgroundImage = (Image)resources.GetObject("btn1.BackgroundImage");
-            btn1.BackgroundImageLayout = ImageLayout.Center;
-            btn1.Location = new Point(34, 304);
-            btn1.Name = "btn1";
-            btn1.Size = new Size(54, 55);
-            btn1.TabIndex = 5;
-            btn1.Click += panel6_Click;
-            btn1.Paint += panel6_Paint;
             // 
             // btn2
             // 
@@ -316,12 +304,27 @@
             btnSaveDeck.Click += btnSaveDeck_Click;
             btnSaveDeck.Paint += btnSaveDeck_Paint;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.Transparent;
+            button1.Location = new Point(28, 304);
+            button1.Name = "button1";
+            button1.Size = new Size(63, 55);
+            button1.TabIndex = 18;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // frmAddDeck
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(679, 586);
+            Controls.Add(button1);
             Controls.Add(btnSaveDeck);
             Controls.Add(panel20);
             Controls.Add(panel19);
@@ -340,7 +343,6 @@
             Controls.Add(btn4);
             Controls.Add(btn3);
             Controls.Add(btn2);
-            Controls.Add(btn1);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
@@ -365,7 +367,6 @@
         private Panel panel4;
         private TextBox txtDeckTitle;
         private Panel panel5;
-        private Panel btn1;
         private Panel btn2;
         private Panel btn3;
         private Panel btn4;
@@ -384,5 +385,6 @@
         private Panel panel19;
         private Panel panel20;
         private Panel btnSaveDeck;
+        private Button button1;
     }
 }
