@@ -40,7 +40,7 @@ namespace GizBook
             mark2.Visible = false;
             mark3.Visible = false;
             mark4.Visible = false;
-            pnlfriends.Visible = false; 
+            pnlfriends.Visible = false;
             pnlstats.Visible = false;
             pnldecks.Visible = false;
         }
@@ -89,6 +89,11 @@ namespace GizBook
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
         {
 
         }

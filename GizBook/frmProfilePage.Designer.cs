@@ -167,6 +167,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(279, 100);
             panel4.TabIndex = 9;
+            panel4.Click += panel4_Click;
             panel4.Paint += panel4_Paint;
             panel4.MouseClick += panel4_MouseClick;
             // 
